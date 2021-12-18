@@ -15,12 +15,10 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->integer("quantity");
-            $table->enum("transaction_type",["in-store","online"]); 
+            $table->enum("transaction_type",["in-store","online"]);
             $table->string("description");
             $table->string("status");
-            $table->foreignId("product_id");
-            $table->foreignId("payment_id");
+            $table->foreignId("customer_id");
             $table->timestamps();
         });
     }

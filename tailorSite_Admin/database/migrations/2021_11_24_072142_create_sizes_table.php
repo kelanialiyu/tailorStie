@@ -17,7 +17,8 @@ class CreateSizesTable extends Migration
             $table->id();
             $table->decimal("size",5,2);
             $table->timestamps();
-            $table->foreignId("product_id");
+            $table->string("sizable_type");
+            $table->foreignId("sizable_id");
             $table->foreignId("size_type_id");
             $table->foreignId("unit_id");
 

@@ -17,10 +17,11 @@ class CreatePaymentsTable extends Migration
             $table->id();
             $table->decimal("amount",8,2);
             $table->enum("type", ["cash","cashless"]);
-            $table->string("payer_name");
-            $table->string("payer_email");
-            $table->string("payer_phone");
             $table->string("status");
+            $table->string("description");
+            $table->foreignId("gateway_payment_id");
+            $table->foreignId("transaction_id");
+            $table->foreignId("customer_id");
             $table->foreignId("payee_id");
             $table->timestamps();
         });
