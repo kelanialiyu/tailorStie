@@ -15,12 +15,12 @@ class CreateSizesTable extends Migration
     {
         Schema::create('sizes', function (Blueprint $table) {
             $table->id();
-            $table->decimal("size",5,2);
+            $table->decimal("size",10,2);
             $table->timestamps();
             $table->string("sizable_type");
             $table->foreignId("sizable_id");
-            $table->foreignId("size_type_id");
-            $table->foreignId("unit_id");
+            $table->foreignId("size_type_id")->nullable();
+            $table->foreignId("unit_id")->nullable();
 
         });
     }

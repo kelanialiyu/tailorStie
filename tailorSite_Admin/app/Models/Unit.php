@@ -9,7 +9,7 @@ class Unit extends Model
 {
     use HasFactory;
 
-    public function size()
+    public function sizes()
     {
         return $this->hasMany(Size::class);
     }

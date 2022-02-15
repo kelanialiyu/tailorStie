@@ -167,7 +167,7 @@ return [
     |
     */
 
-    'right_sidebar' => false,
+    'right_sidebar' => true,
     'right_sidebar_icon' => 'fas fa-cogs',
     'right_sidebar_theme' => 'dark',
     'right_sidebar_slide' => true,
@@ -254,10 +254,10 @@ return [
             // 'label_color' => 'success',
             'submenu' => [
                 [
-                    'text' => 'all',
+                    'text' => 'All',
                     'url'  => '/transaction'           ],
                 [
-                    'text' => 'create',
+                    'text' => 'Create',
                     'url'  => '/transaction/create'             ],
             ],
         ],
@@ -269,10 +269,10 @@ return [
             // 'label_color' => 'success',
             'submenu' => [
                 [
-                    'text' => 'all',
+                    'text' => 'All',
                     'url'  => '/customer'           ],
                 [
-                    'text' => 'create',
+                    'text' => 'Create',
                     'url'  => '/customer/create'             ],
             ],
         ],
@@ -374,22 +374,7 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+
     ],
 
     /*

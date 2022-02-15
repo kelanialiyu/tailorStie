@@ -24,7 +24,7 @@ class CreateCustomersTable extends Migration
             $table->string("country");
             $table->string("zipcode")->nullable();
             $table->string("password")->nullable();
-            $table->boolean("signedup");
+            $table->boolean("signed_up")->default(false);
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@
             </ul>
         </div>
     @endif
-        <div class="col-md-12">
+        <div class="col-md-9 center">
         <div class="card card-secondary">
               <div class="card-header">
                 <h3 class="card-title">Create Customer</h3>
@@ -26,7 +26,7 @@
               <!-- form start -->
               <form method="POST" action="{{route('customer.store')}}">
                   @csrf
-                <div class="card-body ">
+                <div class="card-body">
                   <div class="form-group">
                     <label for="name">Full Name</label>
                     <input type="text" class="form-control form-control-border" id="name" name="name" placeholder="Full name">

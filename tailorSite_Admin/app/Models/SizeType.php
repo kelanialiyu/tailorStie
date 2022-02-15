@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class SizeType extends Model
 {
     use HasFactory;
-
+    protected $fillable=["name"];
     public function sizes()
     {
         return $this->hasMany(Size::class);
